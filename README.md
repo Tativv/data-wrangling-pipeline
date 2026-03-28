@@ -1,48 +1,74 @@
-# 📊 Pipeline de Vendas
+# 📊 Pipeline de Dados de Vendas (ETL)
 
-Script em Python que realiza extração, transformação e carga (ETL) de dados de vendas, criando um banco SQLite **(vendas.db)** pronto para consultas.
+Script em Python para extração, transformação e carga (ETL) de dados de vendas, gerando um banco SQLite pronto para análise.
 
-# ⚙️ Pré-requisitos
-Python 3.10+
+---
 
-Bibliotecas do requirements.txt:
+## 📌 Visão geral
+
+Este projeto implementa um pipeline de dados responsável por processar informações de vendas a partir de um arquivo CSV, realizar tratamento dos dados e armazená-los em um banco de dados estruturado.
+
+---
+
+## ⚙️ Etapas do pipeline
+
+- 📥 Extração de dados a partir de arquivo CSV  
+- 🧹 Limpeza e padronização de dados  
+- ➕ Criação de métricas (valor_total)  
+- 💾 Carga em banco SQLite  
+- 📊 Geração de resumo de vendas por categoria  
+
+---
+
+## 🛠️ Tecnologias
+
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![ETL](https://img.shields.io/badge/ETL-Process-4CAF50?style=for-the-badge)
+
+---
+
+---
+
+## ▶️ Como executar
+
+1. Instale as dependências:
+
 ```
+bash
 pip install -r requirements.txt
 ```
-
-# ▶️ Como rodar
-
-## Pelo terminal (bash/powershell)
-1. Coloque o arquivo vendas.csv na pasta correta ou ajuste o caminho no código.
-2. No terminal, execute:
+2. Execute o pipeline:
 ```
-pippython src/pipeline.py
+bash
+python src/pipeline.py
 ```
-## Diretamente no VS Code
+---
+## 🎯 Objetivo
 
-1. Abra o projeto no VS Code.
+Demonstrar a construção de um pipeline de dados completo, desde a ingestão até a disponibilização para análise.
 
-2. Certifique-se de que Python 3.10+ esteja selecionado como interpretador (canto inferior direito).
+---
 
-3. Abra src/pipeline.py.
+## 👩‍💻 Minha contribuição
 
-4. Clique no botão Run (▶️) no canto superior direito ou pressione F5.
+- Desenvolvimento do pipeline ETL
+- Limpeza e transformação de dados
+- Modelagem do banco de dados
 
-O script será executado no Terminal integrado, mostrando todas as etapas do pipeline.
+---
 
-💡 Dica: usar a extensão Code Runner permite executar arquivos Python rapidamente clicando com o botão direito → Run Code.
+## 👥 Equipe
 
-# 📌 O que o script faz
+Squad Nina Da Hora
 
-📥 Carregar e explorar os dados
+- Bruna de Avila Pospiesz  
+- Tatiana Varona Villavicencio  
+- Vanessa Simão da Costa  
+- Pâmella Oliveira  
+- Francielle Cristina da C. Silva  
+- Ingrid Costa Ferreira  
+- Luana Jaime Tocchio  
+- Vanelle Rabelo do Nascimento  
+- Gisela Keidel 
 
-🧹 Limpar e padronizar datas, valores nulos, quantidades e preços
-
-➕ Criar coluna valor_total
-
-💾 Criar banco SQLite com tabelas tb_clientes e tb_vendas
-
-📊 Gerar resumo de vendas por categoria
-
-# 👥 Equipe
-## Nina da Hora
